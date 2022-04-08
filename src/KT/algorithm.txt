@@ -1,0 +1,17 @@
+Algorithm for Knight's Tour (work in progress)
+----------------------------------------------
+
+1. Choose a random starting point and set it as a current position. Mark it with 1;
+2. Determine all accessible (possible and safe) positions;
+3. Choose the position P  with minimal count of free accessible positions;
+    3.1. If 2 or more positions have the same amount of minimal accessible positions, choose the first position;
+4. Mark P as the current position, increment the position counter;
+5. Do 2. until a position with no more accessible positions is reached.
+
+
+Program structure
+-------------------
+
+Objects:
+    - Board (size can be typed in at the start; matrix of Cell objects with m = n)
+    - Cell
