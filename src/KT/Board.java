@@ -71,7 +71,7 @@ public class Board {
      * @param column of the knight cell
      * @return Cell[] with all accessible positions for the current cell
      */
-    public Cell[] accessiblePositions(int row, int column)  m{
+    public Cell[] accessiblePositions(int row, int column) {
         int nextX, nextY, counter = 0;
         boolean isSafe;
         int[][] cellsCoordinates = new int[8][2];
